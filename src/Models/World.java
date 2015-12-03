@@ -15,10 +15,11 @@ public class World extends Observable {
 	private WorldView view;
 	
 	public World() {
+		view = new WorldView(this);
 		bee = new Bee(this);
 		pots = new ArrayList<Pot>();
-		view = new WorldView(this);
-		initPot();
+		//initPot();
+		addObserver(view);
 	}
 	
 	public void initPot() {
