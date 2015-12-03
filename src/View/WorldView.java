@@ -1,5 +1,6 @@
 package View;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Observable;
 import java.util.Observer;
@@ -13,12 +14,12 @@ public class WorldView implements Observer {
 	
 	public WorldView(World world) {
 		this.world = world;
+		views = new ArrayList<View>();
 	}
 	
 	public void addView(View view) {
 		views.add(view);
 	}
-	
 	
 	@Override
 	public void update(Observable arg0, Object arg1) {

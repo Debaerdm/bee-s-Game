@@ -18,5 +18,16 @@ public class World extends Observable {
 		bee = new Bee(this);
 		pots = new ArrayList<Pot>();
 		view = new WorldView(this);
+		initPot();
+	}
+	
+	public void initPot() {
+		for(int i = 0; i < 3; i ++) {
+			pots.add(new Pot(this));
+		}
+	}
+	
+	public WorldView getView() {
+		return view;
 	}
 }
