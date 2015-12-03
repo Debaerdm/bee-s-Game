@@ -6,7 +6,7 @@ import Models.World;
 
 public class GameObject {
 	
-	private Coordonnees coord;
+	private Coordonnee coord;
 	private Color color;
 	private World world;
 	
