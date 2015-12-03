@@ -6,9 +6,9 @@ import Models.World;
 
 public class GameObject {
 	
-	private Coordonnee coord;
-	private Color color;
-	private World world;
+	protected Coordonnee coord;
+	protected Color color;
+	protected World world;
 	
 	public GameObject(World world) {
 		this.world = world;
