@@ -26,9 +26,6 @@ public class BeeView implements View {
 	public void paint(Graphics g) {
 		// TODO Auto-generated method stub
 		g.drawImage(imgBee.getImage(), 750, 100, null);
-		
-		setColor();
-		
 		g.setColor(bee.getColor());
 		g.fillOval(900, 150, 75, 75);
 		g.setColor(Color.BLACK);
@@ -51,5 +48,11 @@ public class BeeView implements View {
 			default:
 				bee.setColor(Color.RED);	
 		}
+	}
+
+	@Override
+	public void setColor(Color color) {
+		// TODO Auto-generated method stub
+		
 	}
 }
